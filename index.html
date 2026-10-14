@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b1220">
+  <meta name="description" content="FairCalc India helps you compare costs and make everyday calculations clearly.">
+  <title>FairCalc India — Clear calculations, smarter decisions</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="FairCalc India home">
+      <span class="brand-mark">₹</span>
+      <span>FairCalc <span class="brand-muted">India</span></span>
+    </a>
+    <nav class="top-actions" aria-label="Main actions">
+      <label class="language-label" for="languageSelect">Language</label>
+      <select id="languageSelect" aria-label="Choose language">
+        <option value="en">English</option>
+        <option value="ml">മലയാളം</option>
+        <option value="hi">हिन्दी</option>
+      </select>
+      <a class="admin-link" href="#admin-note">Admin (coming soon)</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow" data-i18n="eyebrow">EVERYDAY CALCULATIONS, MADE CLEAR</p>
+        <h1 data-i18n="heroTitle">Know the numbers.<br><span>Make smarter decisions.</span></h1>
+        <p class="hero-description" data-i18n="heroDescription">
+          Calculate costs, compare prices and understand your everyday expenses — without the confusion.
+        </p>
+        <a class="primary-button" href="#calculators" data-i18n="exploreTools">Explore calculators <span aria-hidden="true">↓</span></a>
+        <p class="hero-note" data-i18n="heroNote">Free starter tools · No account needed</p>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="floating-card card-top"><span class="mini-icon green">✓</span><div><strong>Clear totals</strong><small>Know what you pay</small></div></div>
+        <div class="calculator-visual">
+          <div class="visual-top"><span></span><span></span><span></span></div>
+          <div class="visual-display"><small>ESTIMATED TOTAL</small><strong>₹ 12,450.00</strong></div>
+          <div class="visual-keys"><i></i><i></i><i></i><i class="key-accent"></i><i></i><i></i><i></i><i class="key-accent"></i><i></i><i></i><i></i><i class="key-accent"></i></div>
+        </div>
+        <div class="floating-card card-bottom"><span class="mini-icon purple">↗</span><div><strong>Compare fairly</strong><small>Check units and costs</small></div></div>
+      </div>
+    </section>
+
+    <section class="trust-strip" aria-label="Platform principles">
+      <div><span>◎</span><p><strong>Simple tools</strong><small>Easy-to-understand results</small></p></div>
+      <div><span>₹</span><p><strong>India-focused</strong><small>Indian rupees and units</small></p></div>
+      <div><span>◷</span><p><strong>Transparent</strong><small>Estimates clearly labelled</small></p></div>
+    </section>
+
+    <section class="tools-section" id="calculators">
+      <div class="section-heading">
+        <div><p class="eyebrow" data-i18n="toolEyebrow">YOUR EVERYDAY TOOLKIT</p><h2 data-i18n="toolTitle">What do you need to calculate?</h2><p data-i18n="toolSubtitle">Choose a tool to get a clear answer in seconds.</p></div>
+        <div class="search-wrap"><span aria-hidden="true">⌕</span><input id="searchInput" type="search" placeholder="Search calculators..." data-i18n-placeholder="searchPlaceholder" aria-label="Search calculators"></div>
+      </div>
+
+      <div class="filter-row" role="group" aria-label="Filter calculators">
+        <button class="filter-chip active" data-filter="all" data-i18n="filterAll">All tools</button>
+        <button class="filter-chip" data-filter="shopping" data-i18n="filterShopping">Shopping</button>
+        <button class="filter-chip" data-filter="money" data-i18n="filterMoney">Money</button>
+        <button class="filter-chip" data-filter="home" data-i18n="filterHome">Home & bills</button>
+      </div>
+
+      <div class="tools-grid">
+        <article class="tool-card" data-category="shopping" data-search="discount sale shopping savings percentage">
+          <div class="tool-icon icon-orange">%</div><span class="tool-tag" data-i18n="tagShopping">SHOPPING</span>
+          <h3 data-i18n="discountTitle">Discount calculator</h3><p data-i18n="discountDesc">Find the final price and how much you save during a sale.</p>
+          <button class="text-button open-calculator" data-calculator="discount" data-i18n="calculateNow">Calculate now <span>→</span></button>
+        </article>
+        <article class="tool-card" data-category="money" data-search="percentage increase decrease amount">
+          <div class="tool-icon icon-blue">％</div><span class="tool-tag" data-i18n="tagMoney">MONEY</span>
+          <h3 data-i18n="percentageTitle">Percentage calculator</h3><p data-i18n="percentageDesc">Calculate a percentage of any number quickly.</p>
+          <button class="text-button open-calculator" data-calculator="percentage" data-i18n="calculateNow">Calculate now <span>→</span></button>
+        </article>
+        <article class="tool-card" data-category="shopping" data-search="unit price compare quantity kilogram litre">
+          <div class="tool-icon icon-green">⇄</div><span class="tool-tag" data-i18n="tagShopping">SHOPPING</span>
+          <h3 data-i18n="unitTitle">Unit price comparison</h3><p data-i18n="unitDesc">Compare pack sizes to see which option costs less per unit.</p>
+          <button class="text-button open-calculator" data-calculator="unit" data-i18n="calculateNow">Calculate now <span>→</span></button>
+        </article>
+        <article class="tool-card" data-category="money" data-search="GST tax estimate rate">
+          <div class="tool-icon icon-purple">₹</div><span class="tool-tag" data-i18n="tagMoney">MONEY</span>
+          <h3 data-i18n="gstTitle">GST estimate</h3><p data-i18n="gstDesc">Estimate a total after adding a GST rate you select.</p>
+          <button class="text-button open-calculator" data-calculator="gst" data-i18n="calculateNow">Calculate now <span>→</span></button>
+        </article>
+        <article class="tool-card" data-category="home" data-search="electricity bill unit kwh power watts hours">
+          <div class="tool-icon icon-yellow">ϟ</div><span class="tool-tag" data-i18n="tagHome">HOME & BILLS</span>
+          <h3 data-i18n="electricityTitle">Electricity cost estimator</h3><p data-i18n="electricityDesc">Estimate appliance energy use and cost from your tariff.</p>
+          <button class="text-button open-calculator" data-calculator="electricity" data-i18n="calculateNow">Calculate now <span>→</span></button>
+        </article>
+        <article class="tool-card" data-category="home" data-search="construction cement bricks paint materials budget">
+          <div class="tool-icon icon-pink">⌂</div><span class="tool-tag" data-i18n="tagHome">HOME & BILLS</span>
+          <h3 data-i18n="materialsTitle">Material cost estimator</h3><p data-i18n="materialsDesc">Add known quantities and prices to build a simple materials budget.</p>
+          <button class="text-button open-calculator" data-calculator="materials" data-i18n="calculateNow">Calculate now <span>→</span></button>
+        </article>
+      </div>
+      <p id="noResults" class="no-results" hidden>No calculators match your search. Try another word.</p>
+    </section>
+
+    <section class="price-note">
+      <div class="price-note-icon">i</div>
+      <div><h3 data-i18n="priceNoteTitle">A note about market prices</h3><p data-i18n="priceNoteText">These starter tools calculate from the values you enter. Live market prices are not connected yet. Later, we will add verified sources, locations and last-updated timestamps so estimates are not mistaken for live quotes.</p></div>
+    </section>
+
+    <section class="admin-preview" id="admin-note">
+      <div><p class="eyebrow">NEXT MILESTONE</p><h2 data-i18n="adminTitle">Built to grow with your idea.</h2><p data-i18n="adminText">Next we’ll connect a shared database, then add secure price management and an admin dashboard.</p></div>
+      <div class="admin-preview-badge"><span>✦</span><div><strong data-i18n="adminBadgeTitle">Admin tools planned</strong><small data-i18n="adminBadgeText">Secure access will be added with the backend.</small></div></div>
+    </section>
+  </main>
+
+  <footer><a class="brand footer-brand" href="#"><span class="brand-mark">₹</span><span>FairCalc <span class="brand-muted">India</span></span></a><p data-i18n="footerText">Clear calculations. Better-informed decisions.</p><small>Prototype v0.1 · Prices are user-entered examples, not live market data.</small></footer>
+
+  <div class="modal-backdrop" id="calculatorModal" hidden>
+    <section class="calculator-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="closeModal" aria-label="Close calculator">×</button>
+      <p class="eyebrow" id="modalEyebrow">CALCULATOR</p><h2 id="modalTitle">Calculator</h2><p class="modal-description" id="modalDescription"></p>
+      <form id="calculatorForm"><div id="calculatorFields" class="calculator-fields"></div><button class="primary-button calculate-submit" type="submit" data-i18n="calculateButton">Calculate result</button></form>
+      <div id="calculatorResult" class="result-box" aria-live="polite" hidden></div>
+      <p class="modal-disclaimer" data-i18n="calculatorDisclaimer">Results are estimates based on the values you enter. Check important decisions with a qualified professional.</p>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
